@@ -56,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Flexible(
               child: ListView.builder(
+                itemCount: listDyanmic.length,
                 itemBuilder: (_, index) => listDyanmic[index],
               ),
             )
