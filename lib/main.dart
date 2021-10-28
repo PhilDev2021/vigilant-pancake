@@ -55,8 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Flexible(
-                child: ListView.builder(
-                    itemBuilder: (_, index) => listDyanmic[index]))
+              child: ListView.builder(
+                itemBuilder: (_, index) => listDyanmic[index],
+              ),
+            )
           ],
         ),
       ),
