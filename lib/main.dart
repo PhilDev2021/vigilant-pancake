@@ -69,3 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+class DynamicWidget extends StatelessWidget {
+  const DynamicWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const TextField(
+      decoration: InputDecoration(hintText: "Enter data"),
+    );
+  }
+}
