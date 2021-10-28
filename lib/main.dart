@@ -31,16 +31,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  addTextField() {
-    return const TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(),
-        hintText: 'Enter a search term',
-      ),
-      keyboardType: TextInputType.number,
-    );
-  }
-
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -48,6 +38,11 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   List<DynamicWidget> listDyanmic = [];
+
+  addTextField() {
+    listDyanmic.add(DynamicWidget());
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: addTextField(),
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
