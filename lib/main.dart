@@ -47,6 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  List<DynamicWidget> listDyanmic = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
